@@ -1,0 +1,244 @@
+body {
+    background-color: #f8f8f8;
+    color: black;
+    font-size: 400;
+    font-weight: 1.5rem;
+    font-family: 'rubikregular';
+}
+
+@font-face {
+    font-family: 'rubikregular';
+    src: url('./fonts/rubik-regular-webfont.woff2') format('woff2'),
+         url('./fonts/rubik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'righteousregular';
+    src: url('./fonts/righteous-regular-webfont.woff2') format('woff2'),
+         url('./fonts/righteous-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.css-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 85px;
+    width: 100%;
+    color: #f02e65;
+    display: flex;
+    font-size: 26px;
+    font-weight: 400;
+    background-color: transparent;
+    opacity: 85%;
+    margin: auto;
+}
+
+.css-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    width: 55%;
+    color: #40404c;
+    display: flex;
+    font-size: 26px;
+    font-weight: 400;
+    margin: auto;
+    justify-content: center;;
+}
+
+.css-navbar a {
+    text-decoration: none;
+}
+
+.css-navbar .css-nav-item {
+    cursor: pointer;
+    margin-right: 33px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    font-size: 18px;
+    color: #40404c;
+    text-decoration: none;
+}
+
+.css-navbar .css-nav-item:hover {
+    color: #00a2c7
+}
+
+.css-home {
+    width: 75%;
+    height: 680px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 125px;
+}
+
+.css-home .css-home-info .css-home-title {
+    color: #40404c;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 700;
+    font-weight: 600;
+}
+
+.css-home .css-home-info .css-home-bio {
+    font-size: 18px;
+    opacity: .75;
+    color:#40404c;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    max-width: 650px;
+}
+
+.css-home .css-home-image-frame .css-home-image {
+    height: 560px;
+    width: 560px;
+    border-top-right-radius: 140px;
+    border-bottom-left-radius: 140px;
+    margin-left: 105px;
+    box-shadow: 0 35px 35px 5px rgb(0 0 0 / 20%);
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.css-home .css-home-image-frame .css-home-image:hover {
+    transform: scale(1.1);
+}
+
+.css-home-explore {
+    margin-top: 175px;
+}
+
+.css-home-explore .css-title {
+    color: #40404c;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.css-home-explore .css-des {
+    opacity: .75;
+    color:#40404c;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.css-home-explore .css-examples {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+
+.css-home-explore .css-examples .css-examples-image {
+    width: 360px;
+    height: 420px;
+    margin-bottom: 95px;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 5px rgb(0 0 0 / 20%);
+    transition: all 0.3s;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+}
+
+.css-home-explore .css-examples .css-examples-image:hover {
+    transform: scale(1.1);
+}
+
+.css-photo-store {
+    margin-top: 175px;
+}
+
+.css-photo-store .css-title {
+    color: #40404c;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.css-photo-store .css-des {
+    opacity: .75;
+    color:#40404c;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.css-photo-store .css-display {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+    max-width: 75%;
+    flex-wrap: wrap;
+}
+
+.css-photo-store .css-display .css-item {
+    width: 360px;
+    height: 420px;
+    margin-bottom: 95px;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 5px rgb(0 0 0 / 20%);
+    transition: all 0.3s;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+    display: block;
+}
+
+.css-photo-store .css-display .css-item:hover {
+    transform: scale(1.1);
+}
