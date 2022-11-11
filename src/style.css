@@ -65,8 +65,13 @@ body {
 
 .css-navbar .css-nav-item {
     cursor: pointer;
-    margin-right: 33px;
-    margin-top: 40px;
+    margin-right: 8.5px;
+    margin-left: 8.5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    margin-top: 32px;
     text-transform: uppercase;
     font-family: Poppins,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -74,14 +79,21 @@ body {
     font-size: 18px;
     color: #40404c;
     text-decoration: none;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/ 
 }
 
 .css-navbar .css-nav-item:hover {
-    color: #00a2c7
+    color: #e31937;
+    background-color: #e9e7e7;
+    border-radius: 5px;
 }
 
 .css-home {
     width: 75%;
+    max-width: 75%;
+    flex-wrap: wrap;
     height: 680px;
     margin: auto;
     box-sizing: border-box;
@@ -98,13 +110,17 @@ body {
 }
 
 .css-home .css-home-info .css-home-title {
-    color: #40404c;
+    color: #e31937;
     font-family: Poppins,sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 64px;
     line-height: 70px;
     font-weight: 700;
     font-weight: 600;
+    opacity: .75;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/     
 }
 
 .css-home .css-home-info .css-home-bio {
@@ -118,6 +134,9 @@ body {
     margin-top: 5px;
     margin-bottom: 0px;
     max-width: 650px;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/     
 }
 
 .css-home .css-home-image-frame .css-home-image {
@@ -140,7 +159,8 @@ body {
 }
 
 .css-home-explore .css-title {
-    color: #40404c;
+    color: #e31937;
+    opacity: .75;
     font-family: Poppins,sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 50px;
@@ -149,6 +169,9 @@ body {
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/ 
 }
 
 .css-home-explore .css-des {
@@ -161,6 +184,9 @@ body {
     font-weight: 400;
     text-align: center;
     margin-bottom: 85px;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/ 
 }
 
 .css-home-explore .css-examples {
@@ -201,6 +227,9 @@ body {
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/ 
 }
 
 .css-photo-store .css-des {
@@ -212,7 +241,65 @@ body {
     line-height: 32px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 85px;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/ 
+}
+
+.css-photo-store .css-filters {
+    display: flex;
+    width: 60%;
+    height: 75px;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 2px;
+}
+
+.css-photo-store .css-filters .css-filter-item {
+    height: 45px;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: #40404c;
+    background-color: #f8f8f8;
+    border: 2px solid #40404c;
+    border-radius: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+    opacity: .75;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/ 
+}
+
+.css-photo-store .css-filters .css-filter-item:hover {
+    color: #e31937;
+    border: 2px solid #e31937;
+}
+
+.css-photo-store .css-filters .css-filter-item-active {
+    height: 45px;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: #40404c;
+    background-color: #f8f8f8;
+    border: 2px solid #40404c;
+    border-radius: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 15px;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/ 
 }
 
 .css-photo-store .css-display {
@@ -222,22 +309,104 @@ body {
     justify-content: center;
     max-width: 75%;
     flex-wrap: wrap;
+    margin-top: 0px;
 }
 
 .css-photo-store .css-display .css-item {
     width: 360px;
     height: 420px;
     margin-bottom: 95px;
-    border-radius: 15px;
-    box-shadow: 0 20px 20px 5px rgb(0 0 0 / 20%);
     transition: all 0.3s;
     margin-top: 0px;
     margin-bottom: 35px;
     margin-left: 17.5px;
     margin-right: 17.5px;
     display: block;
+    background-color: transparent;
+    background-size: cover;
+    border-radius: 15px;
+    border: 0px;
 }
 
 .css-photo-store .css-display .css-item:hover {
-    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.css-photo-store .css-display .css-item:hover .css-download {
+    visibility: visible;
+}
+
+.css-photo-store .css-display .css-item .css-download {
+    visibility: hidden;
+    width: 360px;
+    height: 420px;
+    background-image: url("./download.png");
+    opacity: .85;
+    border-radius: 15px;
+}
+
+.css-photo-store .css-display .css-item .css-download .css-buttons {
+    width: 300px;
+    height: 175px;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+}
+
+.css-photo-store .css-display .css-item .css-download .css-buttons a {
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: #40404c;
+    width: 300px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 0px solid;
+}
+
+.css-photo-store .css-display .css-item .css-download .css-buttons a:hover {
+    color: #e31937;
+    background-color: #e9e7e7;
+    border-radius: 5px;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+.css-about {
+    margin-top: 175px;
+}
+
+.css-about .css-title {
+    color: #40404c;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/ 
+}
+
+.css-about .css-des {
+    opacity: .75;
+    color:#40404c;
+    font-family: Poppins,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: auto;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 85px;
+    max-width: 65%;
+    -webkit-user-select: none; /*(Chrome/Safari/Opera)*/ 
+    -moz-user-select: none;/*(Firefox)*/ 
+    -ms-user-select: none;/*(IE/Edge)*/ 
 }
